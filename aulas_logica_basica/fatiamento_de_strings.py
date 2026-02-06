@@ -3,7 +3,7 @@ Fatiamento de strings
 012345678
 Olá mundo
 -987654321
-Fatiiamento [i:f:p] [::]
+Fatiamento [i:f:p] [::]
 Obs.: a função len retorna a qts
 de caracteres da str
 """
