@@ -6,5 +6,5 @@ try:
         print('O número que você digitou é par.')
     else:
         print('O número que você digitou é ímpar.')
-except:
-    print('O que você digitou não é um número inteiro.')    
+except ValueError:
+    print('O que você digitou não é um número inteiro.')
