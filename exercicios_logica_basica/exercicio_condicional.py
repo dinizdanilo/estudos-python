@@ -25,5 +25,4 @@ if nome and idade:
     else:
         print('Seu nome não contém espaços.')
 else:
-    print('Desculpe, você deixou campos vazios.')
-         
+    print('Desculpe, você deixou campos vazios.')         
