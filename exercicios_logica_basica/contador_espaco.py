@@ -10,6 +10,6 @@ while indice < len(frase):
         contador += 1
 
 if contador > 0:
-    print(f'A quantida de de espaços na sua frase é {contador}')    
+    print(f'A quantidade de espaços na sua frase é {contador}')    
 else:
     print(f'Sua frase não contém espaços') 
