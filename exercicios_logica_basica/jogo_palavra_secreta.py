@@ -22,9 +22,14 @@ while palavra_formatada != palavra_secreta:
             palavra_formatada += letra_secreta
         else:
             palavra_formatada += '*'   
+            
+    if tentativas >= 10:
+        print('Você perdeu!\n'
+              f'A palavra secreta era "{palavra_secreta}"')
+        break        
            
     print(palavra_formatada)
             
-print('VOCÊ GANHOU PARABENS!!')        
-print(f'A palavra secreta era: "{palavra_secreta}"')
-print(f'A quantidade de tentativas foi: {tentativas}')       
+    print('VOCÊ GANHOU PARABENS!!\n'
+    f'A palavra secreta era: "{palavra_secreta}"\n' 
+    f'A quantidade de tentativas foi: {tentativas}')        
