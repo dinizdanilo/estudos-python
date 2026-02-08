@@ -1,10 +1,12 @@
+import os
+
 palavra_secreta = ('automovel')
 
 letras_acertadas = ''
 tentativas = 0
 palavra_formatada = ''
 
-while palavra_formatada != palavra_secreta:
+while True:
     palavra_formatada = ''
     letra_digitada = input('Digite uma letra: ').lower()
     
@@ -23,13 +25,16 @@ while palavra_formatada != palavra_secreta:
         else:
             palavra_formatada += '*'   
             
-    if tentativas == 6:
+    if tentativas == 10:
+        os.system('clear')
         print('Você perdeu!\n'
               f'A palavra secreta era "{palavra_secreta}"')
         break        
-           
     print(palavra_formatada)
-            
-    print('VOCÊ GANHOU PARABENS!!\n'
-    f'A palavra secreta era: "{palavra_secreta}"\n' 
-    f'A quantidade de tentativas foi: {tentativas}')        
+           
+    if palavra_formatada == palavra_secreta:       
+        os.system('clear')
+        print('VOCÊ GANHOU PARABENS!!\n'
+        f'A palavra secreta era: "{palavra_secreta}"\n' 
+        f'A quantidade de tentativas foi: {tentativas}')  
+        break      
