@@ -8,14 +8,15 @@ letra_apareceu_mais = ''
 
 while i < len(frase):
     letra_atual = frase[i].lower()
-    qtd_apareceu_mais_atual = frase.count(letra_atual)
     
     if letra_atual == ' ':
         i += 1
         continue
     
-    if qtd_apareceu_mais <= qtd_apareceu_mais_atual:
-        qtd_apareceu_mais = qtd_apareceu_mais_atual
+    qtd_atual = frase.count(letra_atual)
+    
+    if qtd_apareceu_mais <= qtd_atual:
+        qtd_apareceu_mais = qtd_atual
         letra_apareceu_mais = letra_atual
         
     i += 1
