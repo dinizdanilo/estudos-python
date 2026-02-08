@@ -23,7 +23,7 @@ while palavra_formatada != palavra_secreta:
         else:
             palavra_formatada += '*'   
             
-    if tentativas >= 6:
+    if tentativas == 6:
         print('Você perdeu!\n'
               f'A palavra secreta era "{palavra_secreta}"')
         break        
